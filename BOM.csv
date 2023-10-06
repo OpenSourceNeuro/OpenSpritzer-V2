@@ -32,7 +32,7 @@ Cable Mount BNC Connector,RS PRO,546-3721,RS,546-3721,1,,,Electronics
 2 way JST Female Connector Housing,JST,XHP-2,RS,820-1611,1,,,Electronics
 3 way JST Female Connector Housing,JST,XHP-3,RS,820-1614,2,,,Electronics
 8 way JST Female Connector Housing,JST,XHP-8,RS,820-1633,,,,Electronics
-2 way JST PCB header,RS Online,B2B-XH,JST,820-1554,1,,,Electronics
-3 way JST PCB header,RS Online,B3B-XH,JST,820-1557,2,,,Electronics
-8 way JST PCB header,,B8B-XH,JST,820-1576,,,,Electronics
+2 way JST PCB header,JST,B2B-XH,RS,820-1554,1,,,Electronics
+3 way JST PCB header,JST,B3B-XH,RS,820-1557,2,,,Electronics
+8 way JST PCB header,JST,B8B-XH,RS,820-1576,,,,Electronics
 Rocker LED switch,,BRockerB-XH,Ebay,,1,,,Electronics
