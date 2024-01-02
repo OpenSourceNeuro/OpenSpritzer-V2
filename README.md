@@ -80,7 +80,7 @@ Openspritzer rivals the performance of commercial systems:
 
 <div align= "justify">
 
-<img align="right" src="./Images/Figure1.PNG" height="300">
+<img align="right" src="./Images/Figure1.PNG" width="300">
 
 <p>
 Openspritzer control over dose delivery matches that of a leading commercial alternative.
@@ -92,6 +92,42 @@ To directly assess the time precision and reliability of Openspritzer we visuali
 
 <p>
 Fluorescence profiles of different command-duration puffs are shown for Openspritzer (green) and Picospritzer, a popular microinjection system(purple), respectively. The same data is shown again in log-log space to highlight details of shorter pulses. Overall, both devices behave in a very similar way in terms of providing effective and near linear control over the total dosage.
+</p>
+
+<br></br>
+
+</div>
+
+***
+
+<h3 align="left">
+OpenSpritzer in neuroscience experiments:
+</h3>
+
+<br>
+
+<div align= "justify">
+
+<img align="left" src="./Images/Figure2.PNG" width="300">
+
+<p>
+Openspritzer controls neural activity by delivering neurotransmitters with millisecond precision.
+</p>
+
+<p>
+To demonstrate the utility of Openspritzer, we use it in a series of standard neurobiological applications: We delivered precise amounts of glutamate(cyan) and GABA(orange) to hippocampal neurons to elicit time- and dose-precise excitatory and inhibitory responses respectively, while monitoring the voltage response of the recorded neuron in current-clamp mode.
+</p>
+
+<p>
+20 ms doses of glutamate (100 μM) reliably evoked excitatory postsynaptic potentials (EPSPs) and action potentials. Similarly, action potential activity elicited via somatic current injection could be suppressed by 20 ms puffs of GABA (100 μM).
+</p>
+
+<p>
+To assess the accuracy of the drug delivery, we applied 10 sweeps where a 20 ms glutamate puff was applied after 500 ms produced almost identical EPSPs demonstrating the precise timing of Openspritzer and highly conserved puff volumes.
+</p>
+
+<p>
+Then, to test the effect of command duration on effective dose delivey, we next applied puffs of increasing duration from 10 to 100 ms in 10 ms steps. Here, each additional 10 ms increase in duration produced a clear increase in both EPSP duration and amplitude. These results confirm the reliability and precision of Openspritzer for delivering small doses of an agent to a widely used biological sample in a controlled manner.
 </p>
 
 <br></br>
