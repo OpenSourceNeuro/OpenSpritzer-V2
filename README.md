@@ -28,6 +28,8 @@ The system is based on a solenoid valve connected to a pressure gauge. Control c
 We anticipate that due to its high performance and low cost Openspritzer will be of interest to a broad range of researchers working in the life and physical sciences.
 </p>
 
+<br>
+
 <p align="center">
-<img align="center" src="./Images/openspritz.png" height="200">
+<img align="center" src="./Images/openspritz.png" height="400">
 </p>
