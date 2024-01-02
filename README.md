@@ -67,7 +67,7 @@ Openspritzer rivals the performance of commercial systems:
 Openspritzer control over dose delivery matches that of a leading commercial alternative.
 </p>
 
-<img align="right" src="./Images/Figure1.png" height="300">
+<img align="right" src="./Images/Figure1.PNG" height="300">
 
 <p style='text-align: justify;'>
 To directly assess the time precision and reliability of Openspritzer we visualised fluorescent dye puffs from a sharp microelectrode under two-photon microscopy. The images were taken from a puff with a duration of several seconds using a wide area scan (rectangles).
