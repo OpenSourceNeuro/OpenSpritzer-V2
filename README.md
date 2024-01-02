@@ -63,16 +63,20 @@ To simplify the wiring assembly, a customed circuit board has been designed. PCB
 Openspritzer rivals the performance of commercial systems:
 </h3>
 
+<div align= "justify">
+
 <img align="right" src="./Images/Figure1.PNG" height="300">
 
-<p style='text-align: justify;'>
+<p>
 Openspritzer control over dose delivery matches that of a leading commercial alternative.
 </p>
 
-<p style='text-align: justify;'>
+<p>
 To directly assess the time precision and reliability of Openspritzer we visualised fluorescent dye puffs from a sharp microelectrode under two-photon microscopy. The images were taken from a puff with a duration of several seconds using a wide area scan (rectangles).
 </p>
 
-<div align= "justify">
+<p>
 Fluorescence profiles of different command-duration puffs are shown for Openspritzer (green) and Picospritzer, a popular microinjection system(purple), respectively. The same data is shown again in log-log space to highlight details of shorter pulses. Overall, both devices behave in a very similar way in terms of providing effective and near linear control over the total dosage.
+</p>
+
 </div>
