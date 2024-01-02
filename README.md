@@ -108,7 +108,7 @@ OpenSpritzer in neuroscience experiments:
 
 <div align= "justify">
 
-<img align="left" src="./Images/Figure2.PNG" width="300">
+<img align="left" src="./Images/Figure2.png" width="300">
 
 <p>
 Openspritzer controls neural activity by delivering neurotransmitters with millisecond precision.
