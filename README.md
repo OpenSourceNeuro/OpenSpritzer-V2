@@ -23,7 +23,7 @@ Designed for ease of use, robustness and low-cost, the “Openspritzer” is an 
 </p>
 
 <p>
-The system is based on a solenoid valve connected to a pressure gauge. Control can be attained directly via an external TTL pulse or internally through an Arduino set by a rotary encoder. The basic setup can be put together for 3-400€, or substantially less if you are prepare to shop around.
+The system is based on a solenoid valve connected to a pressure gauge. Control can be attained directly via an external TTL pulse or internally through an Arduino set by a rotary encoder. The basic setup can be put together for ~400€, or substantially less if you are prepare to shop around.
 </p>
 
 <p>
