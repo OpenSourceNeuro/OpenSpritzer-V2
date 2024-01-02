@@ -30,7 +30,7 @@ The system is based on a solenoid valve connected to a pressure gauge. Control c
 We anticipate that due to its high performance and low cost Openspritzer will be of interest to a broad range of researchers working in the life and physical sciences.
 </p>
 
-<br></br>
+<br>
 
 </div>
 
@@ -39,16 +39,18 @@ We anticipate that due to its high performance and low cost Openspritzer will be
 <img align="center" src="./Images/openspritz.png" height="400">
 </p>
 
-<p align: "right">
+<p align= "right">
 The original work was published in <a href="https://www.nature.com/articles/s41598-017-02301-2"> Forman et al. 2017, Scientific Reports</a>
 </p>
 
 
 ***
 
-<h3 align="justify">
+<h3 align="left">
 OpenSpritzer, a DIY open source micro-injector:
 </h3>
+
+<br>
 
 <div align= "justify">
 
@@ -70,9 +72,11 @@ To simplify the wiring assembly, a customed circuit board has been designed. PCB
 
 ***
 
-<h3 align="justify">
+<h3 align="left">
 Openspritzer rivals the performance of commercial systems:
 </h3>
+
+<br>
 
 <div align= "justify">
 
