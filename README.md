@@ -16,17 +16,21 @@ The hardware is licensed under the <a href="https://cern-ohl.web.cern.ch">CERN O
 
 ***
 
-<p style='text-align: justify;'>
+<div align= "justify">
+
+<p>
 Designed for ease of use, robustness and low-cost, the “Openspritzer” is an open hardware “Picospritzer” as routinely used in biological labs around the world. The performance of Openspritzer and commercial alternatives is effectively indistiguishable.
 </p>
 
-<p style='text-align: justify;'>
+<p>
 The system is based on a solenoid valve connected to a pressure gauge. Control can be attained directly via an external TTL pulse or internally through an Arduino set by a rotary encoder. The basic setup can be put together for 3-400€, or substantially less if you are prepare to shop around.
 </p>
 
-<p style='text-align: justify;'>
+<p>
 We anticipate that due to its high performance and low cost Openspritzer will be of interest to a broad range of researchers working in the life and physical sciences.
 </p>
+
+</div>
 
 <br></br>
 
@@ -45,17 +49,21 @@ The original work was published in <a href="https://www.nature.com/articles/s415
 OpenSpritzer, a DIY open source micro-injector:
 </h3>
 
-<p style='text-align: justify;'>
+<div align= "justify">
+
+<p>
 Compared to similar commercial systems that can cost up to several thousand pounds, the cost of the fully equipped Openspritzer (~£300) makes it particularly attractive for those wishing to pursue cutting-edge techniques in low resource environments.
 </p>
 
-<p style='text-align: justify;'>
+<p>
 This repository contains detailed <a href="https://github.com/OpenSourceNeuro/OpenSpritzer-V2/blob/main/Installation_Manual.md">assembly instructions and an operation manual</a> for OpenSpritzer. The <a href="https://github.com/OpenSourceNeuro/OpenSpritzer-V2/blob/main/BOM.csv">bill of material</a> details all pneumatic, mechanical and electronic components required.
 </p>
 
-<p style='text-align: justify;'>
+<p>
 To simplify the wiring assembly, a customed circuit board has been designed. PCB prototype companies (i.e. <a href="jlcpcb.com"> JLCPCB</a>) will only require the <a href="https://github.com/OpenSourceNeuro/OpenSpritzer-V2/tree/main/PCB_Rack%20version"> gerber.zip</a> folder to be sent to them for production.
 </p>
+
+</div>
 
 ***
 
