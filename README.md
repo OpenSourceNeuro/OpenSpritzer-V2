@@ -7,7 +7,7 @@
 <h3 align="center">  An Open hardware pressure ejection system for reliably delivering picolitre volumes.</h3></p>
 <h6 align="right">developed by M.J.Y. Zimmermann</h6>
 
-<br>
+<br></br>
 
 This project is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License v3.0</a>
 <br>
@@ -28,8 +28,12 @@ The system is based on a solenoid valve connected to a pressure gauge. Control c
 We anticipate that due to its high performance and low cost Openspritzer will be of interest to a broad range of researchers working in the life and physical sciences.
 </p>
 
-<br>
+<br></br>
 
 <p align="center">
 <img align="center" src="./Images/openspritz.png" height="400">
+</p>
+
+<p style='text-align: justify;'>
+The original work was published in <a href="https://www.nature.com/articles/s41598-017-02301-2"> Forman et al. 2017, Scientific Reports</a>
 </p>
