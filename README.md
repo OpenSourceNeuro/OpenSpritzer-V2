@@ -30,15 +30,16 @@ The system is based on a solenoid valve connected to a pressure gauge. Control c
 We anticipate that due to its high performance and low cost Openspritzer will be of interest to a broad range of researchers working in the life and physical sciences.
 </p>
 
+<br></br>
+
 </div>
 
-<br></br>
 
 <p align="center">
 <img align="center" src="./Images/openspritz.png" height="400">
 </p>
 
-<p style='text-align: right;'>
+<p align: "right">
 The original work was published in <a href="https://www.nature.com/articles/s41598-017-02301-2"> Forman et al. 2017, Scientific Reports</a>
 </p>
 
@@ -63,6 +64,8 @@ This repository contains detailed <a href="https://github.com/OpenSourceNeuro/Op
 To simplify the wiring assembly, a customed circuit board has been designed. PCB prototype companies (i.e. <a href="jlcpcb.com"> JLCPCB</a>) will only require the <a href="https://github.com/OpenSourceNeuro/OpenSpritzer-V2/tree/main/PCB_Rack%20version"> gerber.zip</a> folder to be sent to them for production.
 </p>
 
+<br></br>
+
 </div>
 
 ***
@@ -86,5 +89,7 @@ To directly assess the time precision and reliability of Openspritzer we visuali
 <p>
 Fluorescence profiles of different command-duration puffs are shown for Openspritzer (green) and Picospritzer, a popular microinjection system(purple), respectively. The same data is shown again in log-log space to highlight details of shorter pulses. Overall, both devices behave in a very similar way in terms of providing effective and near linear control over the total dosage.
 </p>
+
+<br></br>
 
 </div>
