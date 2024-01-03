@@ -46,9 +46,9 @@ The original work was published in <a href="https://www.nature.com/articles/s415
 
 ***
 
-<h3 align="left">
+<h2 align="left">
 OpenSpritzer, a DIY open source micro-injector:
-</h3>
+</h2>
 
 <br>
 
@@ -72,9 +72,9 @@ To simplify the wiring assembly, a customed circuit board has been designed. PCB
 
 ***
 
-<h3 align="left">
+<h2 align="left">
 Openspritzer rivals the performance of commercial systems:
-</h3>
+</h2>
 
 <br>
 
@@ -100,9 +100,9 @@ Fluorescence profiles of different command-duration puffs are shown for Openspri
 
 ***
 
-<h3 align="left">
+<h2 align="left">
 OpenSpritzer in neuroscience experiments:
-</h3>
+</h2>
 
 <br>
 
