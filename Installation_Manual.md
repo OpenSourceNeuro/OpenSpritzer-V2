@@ -21,41 +21,33 @@ This document contains detailed assembly instructions, a software guideline and 
 </p>
 
 <p>
-The Arduino code and 3D casing files (SCAD) for either 3D printing or laser cutting (STL and DXF) can be downloaded <a href="https://github.com/OpenSourceNeuro/OpenSpritzer-V2/tree/main/Casing">here</a>, and further modified to fit customise purposes. The device is designed to regulate the pressure and duration of a single or repeated puff(s) of compressed air. Typically, the output air port is connected to a glass puffer pipette which has been drawn into a sharp point with a narrow (2-3μm) diameter pore.
+The Arduino code and 3D casing files (SCAD) for either 3D printing or laser cutting (STL and DXF) can be downloaded <a href="https://github.com/OpenSourceNeuro/OpenSpritzer-V2/tree/main/Casing"><strong>here</strong></a>, and further modified to fit customise purposes. The device is designed to regulate the pressure and duration of a single or repeated puff(s) of compressed air. Typically, the output air port is connected to a glass puffer pipette which has been drawn into a sharp point with a narrow (2-3μm) diameter pore.
 </p>
 
 <p>
 The device itself consists of a printed circuit board, a microcontroller, a solenoid valve, a pressure regulator with a manometer and various interface, off-the-shelf, components.
 </p>
 
-<p>
-The device is here shown without its covering lid. The pressure regulator is mounted on the right and attached to the front panel via a retaining threaded ring that comes with the regulator. The printed circuit board (PCB) is mounted onto attachment points on the bottom of the box. There is a platform supports on which the solenoid can rest above the circuit board and a LED can be attached to a mount-point on the lid.
-</p>
-
-
 <img align="right" width="600" src="./Images/Figure3.png">
 
+<p>
+The device is here shown without its covering lid.
+The pressure regulator is mounted on the right and attached to the front panel via a retaining threaded ring that comes with the regulator.
+M3 threaded spacers are mounted onto the PCB and are meant to be screwed to the top and bottom part of the box.
+The solenoid is screwed directly onto the PCB.
+The manometer is locked onto the front panel with a 3D printed part and two M3 bolts.
+</p>
+
 </div>
-
-
-<p align="justify">
-The location of the through-hole resistor is circled in red and the following graph shows the relationship between the resistance and the driver output current. If the user wants / needs to change the current output, the LED datasheet will provide the optimal forward current required. Still it is not expected that such current change would be necessary.
-</p>
-
-<p align="justify">
-The TLC driver is powered separately from the microcontroller, from the back of the device and can take 5v to 30V. Since the TLC is a constant current driver, the voltage selection is not really critical. It just needs to be slightly higher than the LEDs forward voltage (typically around 3v for standard LEDs). In doubt consult the LED datasheet
-</p>
-
-
 
 <br></br>
 
 ## Driver Installation
 <br>
 
-LED Zappelin runs on an Espressif ESP32 board and requires the USB to UART bridge <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers"> CP210x driver</a>,  which can be downloaded<a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads"> <strong>here</strong></a>.
+OpenSpritzer firmware runs on an Espressif ESP32 board and requires the USB to UART bridge <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers"> CP210x driver</a>,  which can be downloaded<a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads"> <strong>here</strong></a>.
 
-Once the driver has been installed, users can operated the GUI (c.f. <a href="https://github.com/OpenSourceNeuro/LED-Zappelin-V2/blob/main/GUI_UserManual.md"> GUI UserManual</a>) or modify the <a href="https://github.com/OpenSourceNeuro/LED-Zappelin-V2/tree/main/Arduino">microcontroller code</a> through the Arduino Integrated Development Environment (IDE).
+Once the driver has been installed, users can upload and modify the <a href="https://github.com/OpenSourceNeuro/OpenSpritzer-V2/tree/main/Arduino/OpenSpritzer_V2">microcontroller code</a> through the <a href="https://www.arduino.cc/en/software">Arduino IDE</a> (Integrated Development Environment).
 
 <br></br>
 
