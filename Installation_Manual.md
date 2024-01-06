@@ -33,7 +33,7 @@ The device is here shown without its covering lid. The pressure regulator is mou
 </p>
 
 
-<img align="right" width="500" src="./Images/Figure3.png">
+<img align="right" width="600" src="./Images/Figure3.png">
 
 </div>
 
