@@ -102,12 +102,31 @@ void HomePage()
   tft.drawNumber(300, gr.getPointX(300.0), gr.getPointY(0.0) +3);
   tft.drawNumber(400, gr.getPointX(400.0), gr.getPointY(0.0) +3);
   
-
-
-
   TitleFlag = false;
      
 }
+
+void TTL_Screen(){
+
+  tft.loadFont(AA_FONT_LARGE);
+  tft.fillScreen(DARKSOL_Bckg3);
+  tft.setTextColor(DARKSOL_Base);
+
+  
+  //tft.setTextSize(3);
+  tft.fillRect(0,0,320,50,DARKSOL_Bckg1);
+  tft.setCursor(20,10);
+  tft.print("OpenSpritzer v2");
+
+
+  tft.loadFont(AA_FONT_SMALL);
+
+  tft.setTextSize(2);
+  tft.setCursor(20,100);
+  tft.print("TTL mode activated");
+
+}
+
 int16_t xpos = 0;
 int16_t ypos = 0;
 PNG png; // PNG decoder inatance

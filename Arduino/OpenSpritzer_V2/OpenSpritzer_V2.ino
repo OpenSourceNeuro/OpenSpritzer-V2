@@ -74,6 +74,14 @@ void loop() {
     TTL_Pulse();
   }
 
+  if (digitalRead(TTL_Screen) == HIGH && Flag_TTL == true){
+    Flag_TTL = false;
+    TTL_Screen();
+  }
+  if (digitalRead(TTL_Screen) == LOW && Flag_TTL == false){
+    Flag_TTL = true;
+    HomePage();
+  }
   
 }  
 

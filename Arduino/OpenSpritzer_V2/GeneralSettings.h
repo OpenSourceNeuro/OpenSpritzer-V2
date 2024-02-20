@@ -48,6 +48,7 @@ void HardwareSettings(){
     Flag_Menu = false;
     Flag_MenuSelection = false;
     Flag_MenuSelected = false;
+    Flag_TTL = true;
 
     menu1_selected = false;
     menu2_selected = false;
@@ -61,6 +62,7 @@ void HardwareSettings(){
 
     pinMode(Pedal, INPUT);
     pinMode(TTL, INPUT);
+    pinMode(TTL_screen, INPUT);
     pinMode(Solenoid, OUTPUT);
     pinMode(SpritzLED, OUTPUT);
 
@@ -206,6 +208,7 @@ void TTL_Pulse(){
   digitalWrite(Solenoid, LOW);
   digitalWrite(SpritzLED, LOW);
 }
+
 
 
 
