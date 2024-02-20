@@ -21,7 +21,7 @@ hex_top = 20+8;
 // // // Switches // // //
 DXF = 0;
 
-PCB = 1;
+PCB = 10;
 
 BNC90 = 10;
 DPDT = 10;
@@ -29,18 +29,18 @@ Power = 10;
 ESP = 10;
 Rotary = 10;
 
-Regulator = 1;
-Solenoid = 1;
+Regulator = 10;
+Solenoid = 10;
 
-Hex_Bottom = 1;
-Hex_Top = 1;
+Hex_Bottom = 10;
+Hex_Top = 10;
 
 Acrylic_Bottom  = 1;
-Acrylic_Top  = 1;
-Acrylic_Front  = 1;
-Acrylic_Back  = 1;
-Acrylic_Left  = 1;
-Acrylic_Right  = 1;
+Acrylic_Top  = 10;
+Acrylic_Front  = 10;
+Acrylic_Back  = 10;
+Acrylic_Left  = 10;
+Acrylic_Right  = 10;
 
 // // // Parameters // // // //
 

@@ -14,9 +14,11 @@ bool menu_select;
 bool menu_select_close;
 
 #define Solenoid      32
+#define SpritzLED     33
 #define Pedal         34
-#define SpritzLED     5
+#define TTL            5
 
+#define TTL_Screen    27
 #define Rotary_SW     21
 #define Rotary_DT     26
 #define Rotary_CLK    25
@@ -58,13 +60,15 @@ void HardwareSettings(){
     numberSelector.attachEncoder(rotaryEncoder);
 
     pinMode(Pedal, INPUT);
+    pinMode(TTL, INPUT);
     pinMode(Solenoid, OUTPUT);
     pinMode(SpritzLED, OUTPUT);
 
-    digitalWrite(Solenoid, LOW);  
-    digitalWrite(SpritzLED, LOW);
-}
+    digitalWrite(Solenoid, LOW); 
+    digitalWrite(SpritzLED, LOW);  
 
+    Serial.begin(921600);
+}
 
 
 
@@ -193,5 +197,16 @@ void Pulse(){
     delay(PulseOff);
   }
 }
+
+void TTL_Pulse(){
+  while (digitalRead(TTL)==HIGH){
+    digitalWrite(Solenoid, HIGH);
+    digitalWrite(SpritzLED, HIGH);
+  }
+  digitalWrite(Solenoid, LOW);
+  digitalWrite(SpritzLED, LOW);
+}
+
+
 
 

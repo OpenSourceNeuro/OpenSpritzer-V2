@@ -67,8 +67,12 @@ void loop() {
 
   if (millis() - RotaryTime > RotaryDuration && Flag_Menu == true){
     Refresh();
+    UpdateGraph();
   }
 
+  if (digitalRead(TTL) == HIGH){
+    TTL_Pulse();
+  }
 
   
 }  

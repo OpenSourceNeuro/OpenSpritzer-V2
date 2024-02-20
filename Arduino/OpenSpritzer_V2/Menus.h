@@ -15,6 +15,41 @@ bool menu3_selected;
 
 int MenuSelection;
 
+void UpdateGraph(){
+  int On = PulseOn;
+  int Off = PulseOff;
+  int Number = NumberOfPulse;
+
+  int PreOn = On/10;
+  int PostOff = Off/10;
+  int Dur = Number*(On+Off);
+  int Ms = Dur /4;
+
+  gr.createGraph(280, 55, DARKSOL_Bckg2);// Graph area is 200 pixels wide, 150 high, dark grey background
+  gr.setGraphScale(-PreOn, Dur+PostOff, 0, 100.0);// x scale units is from 0 to 100, y scale units is -50 to 50
+  gr.setGraphGrid(0.0, 100.0, 0, 25.0, DARKSOL_Bckg1);// X grid starts at 0 with lines every 10 x-scale units  Y grid starts at -50 with lines every 25 y-scale units
+  gr.drawGraph(20, 60);// Draw empty graph, top left corner at 40,10 on TFT
+
+  tr.startTrace(DARKSOL_Red);// Start a trace 
+ 
+  tr.addPoint(-PreOn, 1.0);
+  tr.addPoint(0.0, 1.0);
+  for (int i = 0; i <= Number-1; i++) {
+    tr.addPoint(i*(On+Off),100.0);
+    tr.addPoint(i*(On+Off)+On,100.0);
+    tr.addPoint(i*(On+Off)+On,1.0);
+    tr.addPoint(i*(On+Off)+On+Off,1.0);
+  }
+  tr.addPoint(Dur, 1.0); 
+  tr.addPoint(Dur+PostOff, 1.0); 
+
+  tft.fillRect(0,115,320,20,DARKSOL_Bckg3);
+  tft.setTextDatum(TC_DATUM); // Top centre text datum
+  for (int i = 0; i<= 4; i++){
+    tft.drawNumber(i*Ms, gr.getPointX(i*Ms), gr.getPointY(0.0) +3);
+  }
+}
+
 void FirstMenuSelected(){
   tft.setTextColor(DARKSOL_Base);
   tft.fillRect(x0Rect,y0Rect1,xRect,yRect,DARKSOL_Bckg1);
@@ -31,6 +66,7 @@ void FirstMenuSelected(){
   tft.print(PulseOff);
 
   Flag_MenuSelected = false;
+  UpdateGraph();
 }
 
 void SecondMenuSelected(){
@@ -50,6 +86,7 @@ void SecondMenuSelected(){
   tft.print(NumberOfPulse);
 
   Flag_MenuSelected = false;
+  UpdateGraph();
 }
 
 void ThirdMenuSelected(){
@@ -69,6 +106,7 @@ void ThirdMenuSelected(){
   tft.print(PulseOn);
 
   Flag_MenuSelected = false;
+  UpdateGraph();
 }
 
 
@@ -95,7 +133,6 @@ void ThirdMenuSelectedText(){
   tft.setCursor(xTxt,y0Txt3);
   tft.print(PulseOff);
 }
-
 
 
 
