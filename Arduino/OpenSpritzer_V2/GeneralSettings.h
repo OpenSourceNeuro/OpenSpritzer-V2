@@ -10,15 +10,30 @@
 
 bool Flag_Menu;
 bool Flag_MenuSelection;
+bool Flag_TTL;
+
 bool menu_select;
 bool menu_select_close;
+bool TitleFlag;
+
+bool Switch_TTL_Flag = false;
+bool TTLReading = false;
+int PreviousTTLState = LOW;
+bool TTL_Screen_Flag = false;
+
+bool Switch_Pedal_Flag = false;
+bool PedalReading = false;
+int PreviousPedalState = LOW;
 
 #define Solenoid      32
 #define SpritzLED     33
 #define Pedal         34
 #define TTL            5
 
-#define TTL_Screen    27
+#define Switch_Pedal  27
+#define Switch_TTL    35
+
+#define TTL_screen    27
 #define Rotary_SW     21
 #define Rotary_DT     26
 #define Rotary_CLK    25
@@ -66,10 +81,13 @@ void HardwareSettings(){
     pinMode(Solenoid, OUTPUT);
     pinMode(SpritzLED, OUTPUT);
 
+    pinMode(Switch_Pedal, INPUT);
+    pinMode(Switch_TTL, INPUT);
+
     digitalWrite(Solenoid, LOW); 
     digitalWrite(SpritzLED, LOW);  
 
-    Serial.begin(921600);
+    Serial.begin(115200);
 }
 
 
@@ -186,7 +204,7 @@ void PulseOff_Loop(){
 void Refresh(){
   RotaryTime = 0;
   Flag_Menu = false;
-  HomePage();
+  PedalScreen();
 }
 
 void Pulse(){
@@ -199,16 +217,6 @@ void Pulse(){
     delay(PulseOff);
   }
 }
-
-void TTL_Pulse(){
-  while (digitalRead(TTL)==HIGH){
-    digitalWrite(Solenoid, HIGH);
-    digitalWrite(SpritzLED, HIGH);
-  }
-  digitalWrite(Solenoid, LOW);
-  digitalWrite(SpritzLED, LOW);
-}
-
 
 
 

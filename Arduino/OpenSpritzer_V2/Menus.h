@@ -15,6 +15,8 @@ bool menu3_selected;
 
 int MenuSelection;
 
+
+
 void UpdateGraph(){
   int On = PulseOn;
   int Off = PulseOff;
@@ -25,10 +27,10 @@ void UpdateGraph(){
   int Dur = Number*(On+Off);
   int Ms = Dur /4;
 
-  gr.createGraph(280, 55, DARKSOL_Bckg2);// Graph area is 200 pixels wide, 150 high, dark grey background
-  gr.setGraphScale(-PreOn, Dur+PostOff, 0, 100.0);// x scale units is from 0 to 100, y scale units is -50 to 50
-  gr.setGraphGrid(0.0, 100.0, 0, 25.0, DARKSOL_Bckg1);// X grid starts at 0 with lines every 10 x-scale units  Y grid starts at -50 with lines every 25 y-scale units
-  gr.drawGraph(20, 60);// Draw empty graph, top left corner at 40,10 on TFT
+  gr.createGraph(280, 55, DARKSOL_Bckg2);                   // Graph area is 280 pixels wide, 55 high, dark solarised background 2
+  gr.setGraphScale(-PreOn, Dur+PostOff, 0, 100.0);          // X scale units is from -a 10th of the On value to the duration of the stimulus plus a 10th of the Off value, y scale units is 0 to 100
+  gr.setGraphGrid(0.0, 100.0, 0, 25.0, DARKSOL_Bckg1);      // X grid starts at 0 with lines every 100 x-scale units  Y grid starts at 0 with lines every 25 y-scale units
+  gr.drawGraph(20, 60);                                     // Draw empty graph, top left corner at 20, 60 on TFT
 
   tr.startTrace(DARKSOL_Red);// Start a trace 
  
@@ -50,6 +52,8 @@ void UpdateGraph(){
   }
 }
 
+
+
 void FirstMenuSelected(){
   tft.setTextColor(DARKSOL_Base);
   tft.fillRect(x0Rect,y0Rect1,xRect,yRect,DARKSOL_Bckg1);
@@ -68,6 +72,8 @@ void FirstMenuSelected(){
   Flag_MenuSelected = false;
   UpdateGraph();
 }
+
+
 
 void SecondMenuSelected(){
   tft.setTextColor(DARKSOL_Base);
@@ -88,6 +94,8 @@ void SecondMenuSelected(){
   Flag_MenuSelected = false;
   UpdateGraph();
 }
+
+
 
 void ThirdMenuSelected(){
   tft.setTextColor(DARKSOL_Base);
@@ -110,6 +118,7 @@ void ThirdMenuSelected(){
 }
 
 
+
 void FirstMenuSelectedText(){
   tft.setTextColor(DARKSOL_Red);
   tft.fillRect(x0Rect,y0Rect1,xRect,yRect,DARKSOL_Bckg1);
@@ -117,6 +126,8 @@ void FirstMenuSelectedText(){
   tft.setCursor(xTxt+10,y0Txt1);
   tft.print(NumberOfPulse);
 }
+
+
 
 void SecondMenuSelectedText(){
   tft.setTextColor(DARKSOL_Red);
@@ -126,6 +137,8 @@ void SecondMenuSelectedText(){
   tft.print(PulseOn);
 }
 
+
+
 void ThirdMenuSelectedText(){
   tft.setTextColor(DARKSOL_Red);
   tft.fillRect(x0Rect,y0Rect3,xRect,yRect,DARKSOL_Bckg1);
@@ -133,6 +146,7 @@ void ThirdMenuSelectedText(){
   tft.setCursor(xTxt,y0Txt3);
   tft.print(PulseOff);
 }
+
 
 
 
