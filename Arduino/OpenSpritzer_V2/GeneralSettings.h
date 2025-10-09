@@ -33,7 +33,6 @@ int PreviousPedalState = LOW;
 #define Switch_Pedal  27
 #define Switch_TTL    35
 
-#define TTL_screen    27
 #define Rotary_SW     21
 #define Rotary_DT     26
 #define Rotary_CLK    25
@@ -77,7 +76,7 @@ void HardwareSettings(){
 
     pinMode(Pedal, INPUT);
     pinMode(TTL, INPUT);
-    pinMode(TTL_screen, INPUT);
+
     pinMode(Solenoid, OUTPUT);
     pinMode(SpritzLED, OUTPUT);
 
